@@ -1,0 +1,4 @@
+.gitignore
+FLAGS += -std=c99 -Werror -Wall -Wextra -g
+LIBS += -lm
+CC = musl-gcc

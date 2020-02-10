@@ -1,0 +1,5 @@
+include_rules
+
+: foreach *.c |> $(CC) $(FLAGS) -c %f -o %o |> %B.o
+: main.o external/*.o lib/*.o |> $(CC) %f $(LIBS) -static -o %o |> typo-guard
+: external/*.o lib/*.o tests/*.o |> $(CC) %f $(LIBS) -static -o %o |> run-tests
