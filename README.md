@@ -5,7 +5,7 @@ A simple program to print out checksums for lines of characters.
 ## Usage
 
 ```
-> typo-guard [--columns/-c <column-limit>] [--allow-control-characters/-a]
+> typo-guard [--columns/-c <column-limit>]
 ```
 
 `typo-guard` accepts input from `stdandard input`, and outputs to `standard
