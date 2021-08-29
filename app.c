@@ -145,6 +145,7 @@ int32_t app_process_interactive(app_t *a, FILE *in, FILE *save, FILE *interactiv
       index++;
       reprint_line(interactive, buffer, index);
       if (index >= max_length) {
+        fprintf(interactive, "\n");
         fprintf(save, "%s\n", buffer);
         index = 0;
         bzero(buffer, max_length + 2);
