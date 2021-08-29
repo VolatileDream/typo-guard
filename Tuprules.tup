@@ -1,4 +1,0 @@
-.gitignore
-FLAGS += -std=gnu11 -Werror -Wall -Wextra -g
-LIBS += -lm
-CC = musl-gcc

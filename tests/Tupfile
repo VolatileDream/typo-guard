@@ -1,3 +1,0 @@
-include_rules
-
-: foreach *.c |> $(CC) -I. -I../lib $(FLAGS) -c %f -o %o |> %B.o

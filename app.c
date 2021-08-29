@@ -1,7 +1,7 @@
 #include "app.h"
 
-#include "libbase16.h"
-#include "PMurHash.h"
+#include "data/base16/libbase16.h"
+#include "third-party/smhasher/src/PMurHash.h"
 
 #include <alloca.h>
 #include <stdlib.h>
