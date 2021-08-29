@@ -47,13 +47,10 @@ int run(app_t *app, int argc, char* argv[]) {
   }
 
   if (columns) {
-    int16_t c = atoi(columns);
-    if (c > 0) {
-      app_set_columns(app, c);
-    }
+    app_set_columns(app, columns);
   }
 
-  return app_process(app, stdin, stdout);
+  return app_process(app, stdin, stdout, stderr);
 }
 int main(int argc, char **argv) {
   app_t *app = app_init();
