@@ -20,9 +20,8 @@ the checksum for a line, and output it with the line text.
 <MurMurHash> " " <text>
 ```
 
-[MurMurHash] is formatted as [Base32 per RFC4648 (part 6)][rfc4648].
+[MurMurHash] is formatted as Base16.
 
 Inspired by https://github.com/mpalmer/typo-guard
 
 [MurMurHash]: https://en.wikipedia.org/wiki/MurmurHash
-[rfc4648]: https://tools.ietf.org/html/rfc4648
