@@ -1,5 +1,0 @@
-include_rules
-
-: foreach *.c |> !cc |>
-: *.o $(TUP_ROOT)/third-party/libmurmurhash3.o $(TUP_ROOT)/data/base16/libbase16.o |> !prog |> typo-guard
-: typo-guard |> !bin |>
